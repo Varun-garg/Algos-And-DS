@@ -13,7 +13,7 @@ public class Main {
         MergeSort(arr, begin, mid);
         MergeSort(arr, mid + 1, end);
 
-        int tempArr[] = new int[end - begin + 1];
+        int tempArr[] = new int[end - begin + 1];  //maybe we can use global array for temporary array instead
         int i = begin, j = mid + 1, k = 0;
         while (k < (end - begin + 1))
             tempArr[k++] = (j > end || ((i <= mid) && arr[i] <= arr[j])) ? arr[i++] : arr[j++];
