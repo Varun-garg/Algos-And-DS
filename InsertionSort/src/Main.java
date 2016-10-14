@@ -28,7 +28,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException{
-        
+
         int arr[]= new int[20];
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
